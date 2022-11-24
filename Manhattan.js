@@ -34,6 +34,7 @@ function exec() {
 /*
 *This function take two coordinates (x1, y1 and x2, y2).
 * It returns the sum of the absolute value of the abscissa and ordinate.
+* If we not use Math.abs, the return value could be negative.
 * The return value is given in number of block(s).
 */
 function manhattan(x1, y1, x2, y2) {
