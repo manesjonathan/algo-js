@@ -1,3 +1,6 @@
+/*
+This function take two coordinates in parameter and calculate the distance between.
+*/
 function calcDistance(x1, y1, x2, y2) {
 
     let y = x2 - x1;
