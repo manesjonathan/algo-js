@@ -15,6 +15,8 @@ class Circle {
     }
 }
 
-let myObject = new Circle(1, 1, 10);
-myObject.move(3, 2);
-console.log(myObject.surface);
+function exercise61() {
+    let myObject = new Circle(1, 1, 10);
+    myObject.move(3, 2);
+    console.log(myObject.surface);
+}

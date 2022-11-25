@@ -1,6 +1,6 @@
 import { Rectangle } from "./6.2.js";
 
-function exec() {
+export function exercise63() {
     let arrayOfRectangle = [];
     let rectangle = null;
     for (let i = 1; i <= 1000; i++) {
@@ -23,4 +23,3 @@ function exec() {
 function getRandomInt() {
     return Math.floor(Math.random() * 100);
 }
-exec();

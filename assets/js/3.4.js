@@ -1,15 +1,17 @@
-
-let numberArrayOne = [1, 2, 3, 4, 5];
-
-function firstMethod(array) {
+function exercise34() {
+    let array = [1, 2, 3, 4, 5];
 
     let minValue = Math.min(...array);
     let maxValue = Math.max(...array);
+    console.log("First method results");
 
     console.log("Min value is : " + minValue);
     console.log("Max value is : " + maxValue);
-}
 
+    console.log("Second method results");
+
+    secondMethod(array);
+}
 
 function secondMethod(array) {
 
@@ -28,5 +30,3 @@ function secondMethod(array) {
     console.log("Min value is : " + minValue);
     console.log("Max value is : " + maxValue);
 }
-firstMethod(numberArrayOne);
-secondMethod(numberArrayOne);

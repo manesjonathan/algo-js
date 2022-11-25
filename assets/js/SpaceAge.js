@@ -1,25 +1,7 @@
-function exec() {
-    const readline = require("readline");
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout,
-    });
-
-    let inputAge = null;
-    let inputPlanet = "";
-
-
-    rl.question("Please enter your age in seconds:\n", function (number) {
-
-        inputAge = number;
-
-        rl.question("Please enter a planet between Mercury, Venus, Earth, Mars or Jupiter:\n", function (string) {
-
-            inputPlanet = string;
-            spaceAge(inputAge, inputPlanet);
-            rl.close();
-        });
-    });
+function exerciseSpaceAge() {
+    let inputAge = prompt("Please enter your age in seconds")
+    let inputPlanet = prompt("Please enter a planet between Mercury, Venus, Earth, Mars or Jupiter")
+    spaceAge(inputAge, inputPlanet);
 }
 
 function spaceAge(numberOfSeconds, planet) {
@@ -34,22 +16,22 @@ function spaceAge(numberOfSeconds, planet) {
     switch (planet) {
         case "Mercury":
             ageOnPlanet = (numberOfSeconds / ((earthDays * mercuryYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet);
+            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
             break;
 
         case "Venus":
             ageOnPlanet = (numberOfSeconds / ((earthDays * venusYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet);
+            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
             break;
 
         case "Earth":
             ageOnPlanet = (numberOfSeconds / ((earthDays * earthYear) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet);
+            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
             break;
 
         case "Mars":
             ageOnPlanet = (numberOfSeconds / ((earthDays * marsYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet);
+            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
             break;
 
         case "Jupiter":
@@ -58,4 +40,3 @@ function spaceAge(numberOfSeconds, planet) {
             break;
     }
 }
-exec();

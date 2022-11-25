@@ -16,7 +16,7 @@ export class Rectangle {
     }
 }
 
-function test() {
+export function exercise62() {
     let rectangle1 = new Rectangle(0, 0, 10, 20);
     let rectangle2 = new Rectangle(0, 0, 10, 20);
     let rectangle3 = new Rectangle(10, 0, 10, 20);
@@ -29,7 +29,10 @@ function test() {
     arrayOfRectangle.push(rectangle4);
 
     arrayOfRectangle.forEach(element => {
-        console.log(rectangle1.collides(element))
+        if (rectangle1.collides(element) == true) {
+            console.log("It collides.");
+        } else {
+            console.log("It not collides.")
+        }
     });
 }
-//test();
