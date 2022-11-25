@@ -1,12 +1,6 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
+function exercise26() {
 
-
-rl.question("Please enter a number between 1 and 7:\n", function (number) {
-    let input = number;
+    let input = prompt("Please enter a number between 1 and 7");
 
     if (input == 1) {
         console.log("Monday");
@@ -27,5 +21,4 @@ rl.question("Please enter a number between 1 and 7:\n", function (number) {
     } else if (input == 7) {
         console.log("Sunday")
     }
-    rl.close()
-});
+}

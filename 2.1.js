@@ -1,13 +1,6 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
+function exercise21() {
 
-let input = "";
-
-rl.question("Please enter your age:\n", function (number) {
-    input = number;
+    let input = prompt("Please enter your age");
 
     if (input >= 18) {
 
@@ -15,5 +8,4 @@ rl.question("Please enter your age:\n", function (number) {
     } else {
         console.log("You are not yet an adult.")
     }
-    rl.close()
-});
+}

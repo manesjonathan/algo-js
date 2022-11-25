@@ -1,4 +1,4 @@
-function exec() {
+function exercise25() {
 
     let number = prompt("What is your favorite number?");
 
@@ -10,5 +10,3 @@ function exec() {
         }
     };
 }
-
-exec();
