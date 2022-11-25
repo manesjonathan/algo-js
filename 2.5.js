@@ -1,20 +1,14 @@
-const readline = require("readline");
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
+function exec() {
 
-let input = null;
+    let number = prompt("What is your favorite number?");
 
-rl.question("What is your favorite number:\n", function (number) {
-    input = number;
+    while (number != 42) {
+      
+        let number=  prompt("Are you sure, What is your favorite number?")
+          if (number == 42){
+            break;
+        }
+    };
+}
 
-    if (input !== 42) {
-        console.log("Are you sure?");
-        rl.question("What is your favorite number:\n", function (number) {
-            input = number;
-        });
-    } else{
-        rl.close()
-    }
-});
+exec();
