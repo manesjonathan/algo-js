@@ -6,6 +6,5 @@ function exercise33() {
         emptyArray.push(number);
     }
 
-    console.log(emptyArray);
-
+    alert(emptyArray);
 }

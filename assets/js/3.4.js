@@ -3,14 +3,7 @@ function exercise34() {
 
     let minValue = Math.min(...array);
     let maxValue = Math.max(...array);
-    console.log("First method results");
-
-    console.log("Min value is : " + minValue);
-    console.log("Max value is : " + maxValue);
-
-    console.log("Second method results");
-
-    secondMethod(array);
+    alert("Min value is " + minValue + " and Max value is " + maxValue);
 }
 
 function secondMethod(array) {
@@ -27,6 +20,6 @@ function secondMethod(array) {
             maxValue = element;
         }
     });
-    console.log("Min value is : " + minValue);
-    console.log("Max value is : " + maxValue);
+    alert("Min value is " + minValue + " and Max value is " + maxValue);
+
 }

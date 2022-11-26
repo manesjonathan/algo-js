@@ -14,6 +14,11 @@ export function askTvSerie() {
         "productionYear": productionYear,
         "castMembers": castMembersList
     };
-    console.log(myObject);
+
+    let alertMsg = "The Tv Serie is " + myObject.name 
+    + ", it was released in " + myObject.productionYear 
+    + ". The cast members are " + myObject.castMembers.toString()
+
+    alert(alertMsg);
     return myObject;
 }

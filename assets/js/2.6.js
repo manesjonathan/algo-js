@@ -3,22 +3,22 @@ function exercise26() {
     let input = prompt("Please enter a number between 1 and 7");
 
     if (input == 1) {
-        console.log("Monday");
+        alert("Monday");
     } else if (input == 2) {
-        console.log("Tuesday")
+        alert("Tuesday")
     }
     else if (input == 3) {
-        console.log("Wednesday")
+        alert("Wednesday")
     }
     else if (input == 4) {
-        console.log("Thursday")
+        alert("Thursday")
     }
     else if (input == 5) {
-        console.log("Friday")
+        alert("Friday")
     }
     else if (input == 6) {
-        console.log("Saturday")
+        alert("Saturday")
     } else if (input == 7) {
-        console.log("Sunday")
+        alert("Sunday")
     }
 }

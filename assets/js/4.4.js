@@ -24,7 +24,8 @@ function exercise44() {
         "Pierre Mauriello",
         "Quentin Bource",
         "Virginie Dourson"])];
-    console.log(pickLearner(learnerArray, 5));
+
+    alert(pickLearner(learnerArray, 5).toString().replaceAll(",", ", "));
 }
 
 function pickLearner(inputAr, n) {

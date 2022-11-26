@@ -11,5 +11,5 @@ function rand10(value1, value2) {
 }
 
 function exercise42() {
-    console.log(rand10(1, 10));
+   alert(rand10(1, 10));
 }

@@ -12,7 +12,7 @@ function multiRand(n) {
     for (let i = 1; i <= n; i += 1) {
         array.push(rand10(1, 10));
     }
-    console.log(array.toString());
+    alert(array.toString());
 }
 
 function rand10(value1, value2) {

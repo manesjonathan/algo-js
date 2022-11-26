@@ -11,5 +11,5 @@ function calculateSum(n) {
         let newNumber = prompt("Please enter a new number")
         sum = sum + Number(newNumber);
     }
-    console.log(sum);
+    alert(sum);
 }

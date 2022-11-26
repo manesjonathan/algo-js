@@ -1,6 +1,6 @@
 function exerciseSpaceAge() {
-    let inputAge = prompt("Please enter your age in seconds")
-    let inputPlanet = prompt("Please enter a planet between Mercury, Venus, Earth, Mars or Jupiter")
+    let inputAge = prompt("Please enter your age in seconds");
+    let inputPlanet = prompt("Please enter a planet between Mercury, Venus, Earth, Mars or Jupiter").toLowerCase();
     spaceAge(inputAge, inputPlanet);
 }
 
@@ -14,29 +14,29 @@ function spaceAge(numberOfSeconds, planet) {
     let jupiterYearsEarth = 11.862615;
 
     switch (planet) {
-        case "Mercury":
+        case "mercury":
             ageOnPlanet = (numberOfSeconds / ((earthDays * mercuryYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
+            alert("Your age on " + planet.charAt(0).toUpperCase() + planet.slice(1) + " is " + ageOnPlanet + " years");
             break;
 
-        case "Venus":
+        case "venus":
             ageOnPlanet = (numberOfSeconds / ((earthDays * venusYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
+            alert("Your age on " + planet.charAt(0).toUpperCase() + planet.slice(1) + " is " + ageOnPlanet + " years");
             break;
 
-        case "Earth":
+        case "earth":
             ageOnPlanet = (numberOfSeconds / ((earthDays * earthYear) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
+            alert("Your age on " + planet.charAt(0).toUpperCase() + planet.slice(1) + " is " + ageOnPlanet + " years");
             break;
 
-        case "Mars":
+        case "mars":
             ageOnPlanet = (numberOfSeconds / ((earthDays * marsYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet + " years");
+            alert("Your age on " + planet.charAt(0).toUpperCase() + planet.slice(1) + " is " + ageOnPlanet + " years");
             break;
 
-        case "Jupiter":
+        case "jupiter":
             ageOnPlanet = (numberOfSeconds / ((earthDays * jupiterYearsEarth) * 24 * 60 * 60)).toFixed(2);
-            console.log("Your age on " + planet + " is " + ageOnPlanet);
+            alert("Your age on " + planet.charAt(0).toUpperCase() + planet.slice(1) + " is " + ageOnPlanet + " years");
             break;
     }
 }

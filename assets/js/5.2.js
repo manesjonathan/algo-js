@@ -8,6 +8,6 @@ function randomizeCast(tvSerie) {
     let newTvSerie = tvSerie;
     let sortedArray = tvSerie.castMembers;
     newTvSerie.castMembers = sortedArray.sort();
-    console.log(newTvSerie.castMembers);
+    alert(newTvSerie.castMembers.toString() + "are the new cast members");
     return newTvSerie.castMembers;
 }

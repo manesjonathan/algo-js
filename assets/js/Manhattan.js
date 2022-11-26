@@ -4,7 +4,7 @@ function exerciseManhattan() {
     let x2 = prompt("Please enter coordinates x2")
     let y2 = prompt("Please enter coordinates y2")
 
-    console.log("The number of blocks is : " + manhattan(x1, y1, x2, y2) + " blocks.");
+    alert("The number of block(s) is " + manhattan(x1, y1, x2, y2) + " block(s).");
 
 }
 

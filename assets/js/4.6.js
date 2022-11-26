@@ -12,5 +12,5 @@ function factorize(num) {
 }
 
 function exercise46() {
-  console.log(factorize(3));
+  alert(factorize(3));
 }

@@ -9,13 +9,13 @@ function exercise32() {
         sumArrayOne = sumArrayOne + number;
     }
 
-    console.log(sumArrayOne / numberArrayOne.length);
+    alert(sumArrayOne / numberArrayOne.length);
 
 
     for (number of numberArrayTwo) {
         sumArrayTwo = sumArrayTwo + number;
     }
 
-    console.log(sumArrayTwo / numberArrayTwo.length);
+    alert(sumArrayTwo / numberArrayTwo.length);
 
 }

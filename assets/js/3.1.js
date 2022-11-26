@@ -8,12 +8,12 @@ function exercise31() {
         sumArrayOne = sumArrayOne + number;
     }
 
-    console.log(sumArrayOne);
+    alert(sumArrayOne);
 
 
     for (number of numberArrayTwo) {
         sumArrayTwo = sumArrayTwo + number;
     }
-    console.log(sumArrayTwo);
+    alert(sumArrayTwo);
 
 }

@@ -1,6 +1,6 @@
 function exerciseChangeCalculator() {
-    console.log(computeChange(12.3, 50));
-    console.log(computeChange(17.41, 20));
+    alert(computeChange(12.3, 50));
+    alert(computeChange(17.41, 20));
 }
 
 function computeChange(price, moneyHanded) {
@@ -14,5 +14,5 @@ function computeChange(price, moneyHanded) {
             change = Math.floor(change * 100) / 100;
         }
     }
-    return [moneyHanded - price + "€", result];
+    return [(moneyHanded - price) + "€", result];
 }

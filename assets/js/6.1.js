@@ -11,12 +11,12 @@ class Circle {
     }
 
     get surface() {
-        return (Math.PI * this.radius ** 2).toFixed(4);
+        return (Math.PI * this.radius ** 2).toFixed(2);
     }
 }
 
 function exercise61() {
     let myObject = new Circle(1, 1, 10);
     myObject.move(3, 2);
-    console.log(myObject.surface);
+    alert("Surface of the circle is " + myObject.surface);
 }

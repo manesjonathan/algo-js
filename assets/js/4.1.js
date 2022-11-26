@@ -19,5 +19,5 @@ It will ask a length and a width by the user.
 function exercise41() {
     let length = prompt("Please enter the length of the rectangle in cm")
     let width = prompt("Please enter the width of the rectangle in cm")
-    console.log("The surface of the rectangle is : " + calcSurfaceAlt(length, width) + " cm²");
+    alert("The surface of the rectangle is : " + calcSurfaceAlt(length, width) + " cm²");
 }
