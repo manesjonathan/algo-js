@@ -11,8 +11,8 @@ function computeChange(price, moneyHanded) {
         if (change >= coins[i]) {
             result.push(coins[i]);
             change -= coins[i];
-            change = Math.floor(change * 100) / 100;
+            i--;
         }
     }
-    return [(moneyHanded - price) + "€", result];
+    return [(moneyHanded - price) + "€ / " + result.toString().replaceAll(",", ", ")];
 }
