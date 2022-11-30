@@ -1,5 +1,6 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #191d24;
   margin: auto;
   width: 75%;
@@ -30,11 +31,11 @@ header,
   background-color: #2a303c;
   flex-direction: column;
   display: flex;
-}
-header article,
-.container article {
-  padding: 3%;
-  align-items: center;
+
+  article {
+    padding: 3%;
+    align-items: center;
+  }
 }
 
 button {
@@ -54,14 +55,18 @@ button {
   padding: 0.5rem;
   margin: 0.2rem;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #fbbd23;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    background-color: #fbbd23;
+    transform: translateY(0);
+  }
 }
-button:hover, button:focus {
-  background-color: #fbbd23;
-}
-button:hover {
-  transform: translateY(-0.2rem);
-}
-button:active {
-  background-color: #fbbd23;
-  transform: translateY(0);
-}/*# sourceMappingURL=style.css.map */
